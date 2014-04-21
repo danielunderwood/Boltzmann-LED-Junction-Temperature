@@ -1,4 +1,4 @@
-This file shows the table that is output when the given data is used.
+This file shows the table that is output when the given data is used. It should be noted that the values are for the specific LEDs that were used and different types of LEDs may have entirely different temperatures.
 
 | Color | Temperature (K) | Fit Uncertainty | Temperature Std. Dev |
 | -----: | :---------: | :-------------: | :------------------:|
