@@ -1,11 +1,11 @@
 % Read in data
 % NOTE: Matlab file should be in same directory as CSV files
-aqua = csvread('aqua.csv');
-blue = csvread('blue.csv');
-green = csvread('green.csv');
-orange = csvread('orange.csv');
-red = csvread('red.csv');
-yellow = csvread('yellow.csv');
+aqua = csvread('data/aqua.csv');
+blue = csvread('data/blue.csv');
+green = csvread('data/green.csv');
+orange = csvread('data/orange.csv');
+red = csvread('data/red.csv');
+yellow = csvread('data/yellow.csv');
 
 % Get intensities and wavelength array
 wavelength = aqua(:, 1) - 15;
@@ -372,11 +372,11 @@ redFit = figure(7);
 yellowFit = figure(8);
 
 % Print figures to figures folder
-print('-depsc',ledSpectra, '../figures/ledSpectra.eps')
-print('-depsc',ledSpectraReduced, '../figures/ledSpectraReduced.eps')
-print('-depsc',aquaFit, '../figures/aquaFit.eps')
-print('-depsc',blueFit, '../figures/blueFit.eps')
-print('-depsc',greenFit, '../figures/greenFit.eps')
-print('-depsc',orangeFit, '../figures/orangeFit.eps')
-print('-depsc',redFit, '../figures/redFit.eps')
-print('-depsc',yellowFit, '../figures/yellowFit.eps')
+print('-depsc',ledSpectra, 'figures/ledSpectra.eps')
+print('-depsc',ledSpectraReduced, 'figures/ledSpectraReduced.eps')
+print('-depsc',aquaFit, 'figures/aquaFit.eps')
+print('-depsc',blueFit, 'figures/blueFit.eps')
+print('-depsc',greenFit, 'figures/greenFit.eps')
+print('-depsc',orangeFit, 'figures/orangeFit.eps')
+print('-depsc',redFit, 'figures/redFit.eps')
+print('-depsc',yellowFit, 'figures/yellowFit.eps')
